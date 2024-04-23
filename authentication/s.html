@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <title>Login page</title>
+    </head>
+    <style>
+    body {
+        font-family: 'Inter';
+        font-size: 24px;
+        margin: 0; /* Remove default margin */
+    }
+    .background {
+        padding: 40px 162px 40px 162px;
+        background-color: #F6F6F6;
+        width: 1440px;
+        height: 120px; /* Reduced height */
+    }
+    .login {
+        background-color: #F6F6F6;
+        width: 1116px;
+        height: 91px;
+        position: relative;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.05px;
+        padding-left: 309px;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24.6px;
+        color: #5C5F6A;
+        position: absolute;
+        top: 55px;
+        left: 309px;
+    }
+    img {
+        position: absolute;
+        top: 70px;
+        left: 390px;
+        width: 24px;
+        height: 24px;
+    }
+    p1 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24.6px;
+        color: black;
+        position: absolute;
+        top: 70px;
+        left: 420px;
+    }
+    .googlelogin img {
+        position: relative;
+        padding: 24px 12px 24px 12px;
+        height: 44px;
+        width: 320px;
+        bottom: 412px;
+        left: 560px;
+        border: 1px;
+        border-color: #B6B7BC;
+        color: #FFFFFF;
+        gap: 8px;
+        max-width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .orimage img {
+        position: absolute;
+        top: 390px;
+        left: 575px;
+        width: 320px;
+        height: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    .logindetails {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24.6px;
+        color: black;
+        position: absolute;
+        top: 546px;
+        left: 560px;
+        width: 320px;
+        height: auto;
+    }
+    </style>
+    <body>
+        <div class="background">
+            <div class="login">
+                <h4>Login</h4>
+                <p>Ecommerce</p>
+                <img src="sidearrow.png" alt="sidearrow">
+                <p1> <b>Login </b></p1>
+            </div>
+        </div>
+        <div class="googlelogin">
+            <img src="google.png" alt="Login with google">
+        </div>
+        <div class="orimage">
+            <img src="or.png" alt="or">
+        </div>
+        <div class="logindetails">
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email"> <br>
+            <label for="pwd">Password</label> <br>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+    </body>
+</html>
