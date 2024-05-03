@@ -14,6 +14,7 @@
         width: 1116px;
         height: 91px;
         position: relative;
+        
     }
     h4 {
         font-size: 24px;
@@ -22,6 +23,23 @@
         padding-left: 309px;
         padding-top: 20px;
         gap: 10px;
+    }
+    .ecom-login{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+
+        width: 149px;
+        height: 25px;
+
+        border-radius: 4px;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
     }
     p {
         font-weight: 500;
@@ -40,6 +58,13 @@
         height: 24px;
     }
     .login-second p{
+        font-family: 'Inter';
+        font-style: normal;
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+
         font-weight: 500;
         font-size: 14px;
         line-height: 24.6px;
