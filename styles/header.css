@@ -1,9 +1,8 @@
 body {
-    font-family: 'Inter';
+    font-family: Arial, sans-serif;
     background-color: white;
     margin: 0;
 }
-
 #offer {
     text-align: center;
     background-color:#0E1422;
@@ -14,20 +13,20 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
-
 #offer a{
     text-decoration: none;
 }
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 84px;
-    background-color: white;
+    width: 1116px;
+    left: 162px;
+    background-color: rgb(255, 255, 255);
     padding: 0 20px;
+    border: 0px, 0px, 1px, 0px;
 }
-
 .navbar a {
     color:#5C5F6A;
     text-decoration: none;
@@ -35,27 +34,26 @@ body {
     font-weight: 500;
     padding: 14px 16px;
 }
-
+.navbar a:hover {
+    color: #0E1422;
+}
 .navbar img{
     width: 163px;
     height: 40px;
     gap: 12px;
 }
-
 .rightNav {
     padding: 14px 16px;
 }
-
 .rightNav input {
     border: 1px solid #ccc;
     padding: 8px 8px 8px 28px;
     border-radius: 4px;
-    background: url("images\search.png") no-repeat 6px center; /* Adjusted background position */
+    background: url("/Product/assets/search.png") no-repeat 6px center;
     background-size: 20px;
 }
-
 .search {
     padding-left: 25px;
-    background: url("images\search.png") no-repeat left;
+    background: url("/Product/assets/search.png") no-repeat left;
     background-size: 20px;
-  }
+}
