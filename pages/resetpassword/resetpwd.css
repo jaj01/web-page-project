@@ -6,21 +6,22 @@ body {
     max-height: 160px;
     background-color: #F6F6F6;
   }
-  .text-left m-0{
+  h4{
     font-family: "Inter";
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content:left;
-  }
-  h4{
+    margin-left: 10em;
     font: bolder;
+    margin-left: 10em;
   }
   .navbar{
     background-color: #F6F6F6;
   }
   .breadcrumb{
     background-color: transparent !important;
+    margin-left: 13em;
     position: relative;
   }
   .breadcrumb-last{
@@ -66,3 +67,54 @@ body {
     margin-top: 1rem;
     max-width: 320px;
   }
+  @media (max-width: 1440px) {
+    h4{
+        margin-left: 10em;
+    }
+    .breadcrumb{
+        margin-left: 13em;
+    }
+}
+
+@media (max-width: 992px) {
+    h4{
+        margin-left: 5em;
+    }
+    .breadcrumb{
+        margin-left: 6em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h4{
+        margin-left: 2em;
+    }
+
+    .breadcrumb {
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    h4{
+        margin-left: 2em;
+    }
+    .breadcrumb{
+        margin-left: 1.5em;
+    }
+    .password-group {
+        max-width: 320px;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    h4 {
+        margin-left: 1em;
+    }
+    .breadcrumb{
+        margin-left: 0em;
+    }
+}
