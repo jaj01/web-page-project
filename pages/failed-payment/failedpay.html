@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="iframe-container">
+        <iframe id="header-iframe" src="../../components/header.html" scrolling="no"></iframe>
+    </div>
+
     <div class="banner">
         <div class="title">
             Failed Order
@@ -19,10 +23,23 @@
     </div>
 
     <div class="container">
-        <img src="../../assets/images/failed.png" alt="Order Failed">
+        <img src="../../assets/images/authentication/failed.png" alt="Order Failed">
         <div class="message-title">Oops! There was an issue</div>
         <div class="message">Oops! There was a problem processing your order. Please review the details and try again.</div>
         <a href="#" class="button">Reorder →</a>
     </div>
+    <div class="iframe-container">
+        <iframe id="footer-iframe" src="../../components/footer.html" scrolling="no"></iframe>
+    </div>
+    <script>
+        document.getElementById('header-iframe').onload = function() {
+    var iframe = document.getElementById('header-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+    document.getElementById('footer-iframe').onload = function() {
+    var iframe = document.getElementById('footer-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+    </script>
 </body>
 </html>

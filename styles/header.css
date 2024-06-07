@@ -1,21 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif; 
     background-color: white;
     margin: 0;
 }
+
 #offer {
     text-align: center;
-    background-color:#0E1422;
+    background-color: #0E1422;
     color: white;
     padding: 8px 0;
     height: 40px;
     width: 100%;
     font-weight: 400;
     font-size: 14px;
+    font-family: "Inter", sans-serif;
 }
-#offer a{
+
+#offer a {
     text-decoration: none;
+    font-family: "Inter", sans-serif; 
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -25,35 +30,315 @@ body {
     left: 162px;
     background-color: rgb(255, 255, 255);
     padding: 0 20px;
-    border: 0px, 0px, 1px, 0px;
+    font-family: "Inter", sans-serif; 
 }
+
 .navbar a {
-    color:#5C5F6A;
+    color: #5C5F6A;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     padding: 14px 16px;
+    font-family: "Inter", sans-serif; 
 }
+
 .navbar a:hover {
     color: #0E1422;
 }
-.navbar img{
+
+.navbar img {
     width: 163px;
     height: 40px;
     gap: 12px;
 }
+
 .rightNav {
     padding: 14px 16px;
 }
+
 .rightNav input {
     border: 1px solid #ccc;
     padding: 8px 8px 8px 28px;
     border-radius: 4px;
-    background: url("/Product/assets/search.png") no-repeat 6px center;
+    background: url("../assets/images/header/search.png") no-repeat 6px center;
     background-size: 20px;
 }
+
 .search {
     padding-left: 25px;
-    background: url("/Product/assets/search.png") no-repeat left;
+    background: url("../assets/images/header/search.png") no-repeat left;
     background-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        width: 100%;
+        padding: 0 15px;
+        margin-left: -170px;
+    }
+    .nav-links{
+        margin-left: 20px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        padding: 0 10px;
+        margin-left: -170px;
+    }
+    .navbar img{
+        margin-left: 20px;
+    }
+    .navbar a {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    .nav-links{
+        margin-top: 20px;
+    }
+    .nav-links a{
+        margin-left: 7px;
+    }
+    .rightNav {
+        width: 45%;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .rightNav input {
+        width: calc(100% - 90px);
+        padding: 6px 6px 6px 24px;
+        margin-right: 5px;
+    }
+    .rightNav a{
+        margin-right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #offer{
+        width: 768px;
+    }
+    .navbar img {
+        width: 140px;
+        height: 35px;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+
+    .navbar {
+        padding: 0 10px;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: -100px;
+    }
+    .nav-links{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .navbar a {
+        font-size: 12px;
+    }
+    .rightNav {
+        width: 45%;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    .rightNav input {
+        width: calc(100% - 150px);
+        padding: 6px 6px 6px 24px;
+        margin-right: 20px;
+    }
+    .rightNav a{
+        margin-right: 42px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    #offer{
+        width: 600px;
+    }
+    .navbar {
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 0;
+        margin-left: 70px;
+    }
+
+    .nav-links a {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .navbar img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .rightNav {
+        width: 100%;
+    }
+
+    .rightNav input {
+        width: calc(100% - 200px);
+        margin-top: 10px;
+        padding: 6px 6px 6px 24px;
+        background-size: 16px;
+        margin-left: -90px;
+    }
+}
+
+@media (max-width: 540px) {
+    #offer{
+        width: 570px;
+        margin-left: -30px;
+    }
+    .navbar {
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 0;
+        margin-left: 200px;
+    }
+    .nav-links{
+        width: 600px;
+    }
+    .nav-links a {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .navbar{
+        margin-left: -170px;
+    }
+    .navbar img {
+        width: 120px;
+        height: 30px;
+        margin-left: -30px;
+    }
+
+    .rightNav {
+        width: 100%;
+    }
+
+    .rightNav input {
+        width: calc(100% - 200px);
+        margin-top: 10px;
+        padding: 6px 6px 6px 24px;
+        background-size: 16px;
+        margin-left: -190px;
+    }
+    .rightNav a{
+        margin-right: -130px;
+    }
+}
+@media (max-width: 344px){
+    #offer{
+        width: 430px;
+    }
+    .navbar {
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar img{
+        margin-left: 10px;
+    }
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 0;
+        margin-left: 70px;
+    }
+    
+    .nav-links a {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .navbar img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .rightNav {
+        width: 100%;
+    }
+
+    .rightNav input {
+        width: calc(100% - 150px);
+        margin-top: 10px;
+        padding: 6px 6px 6px 24px;
+        background-size: 16px;
+        margin-left: -210px;
+    }
+    .rightNav a{
+        margin-left: 160px;
+    }
+}
+@media (max-width: 412px){
+    #offer{
+        width: 440px;
+    }
+    .navbar {
+        padding: 0 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -120px;
+    }
+    .navbar img{
+        margin-left: -10px;
+    }
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 0;
+        margin-left: 70px;
+    }
+    .nav-links{
+        margin-left: -20px;
+    }
+    .nav-links a {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .navbar img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .rightNav {
+        width: 100%;
+    }
+
+    .rightNav input {
+        width: calc(100% - 150px);
+        margin-top: 10px;
+        padding: 6px 6px 6px 24px;
+        background-size: 16px;
+        margin-left: -220px;
+    }
+    .rightNav a{
+        margin-left: 155px;
+    }
+
 }

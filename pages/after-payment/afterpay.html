@@ -8,14 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        fetch('../../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    </script>
+    <div class="iframe-container">
+        <iframe id="header-iframe" src="../../components/header.html" scrolling="no"></iframe>
+    </div>
+    
     <div class="banner">
         <div class="title">
             Successful Order
@@ -23,14 +19,26 @@
         <div class="breadcrumb">
             <a href="#">Ecommerce</a> &gt; <span>Successful Order</span>
         </div>
-
     </div>
 
     <div class="container">
-        <img src="../../assets/images/delivered.png" alt="Order Success">
+        <img src="../../assets/images/authentication/delivered.png" alt="Order Success">
         <div class="message-title">Thank you for shopping</div>
         <div class="message">Your order has been successfully placed and is now being processed.</div>
         <a href="#" class="button">Go to my account →</a>
     </div>
+    <div class="iframe-container">
+        <iframe id="footer-iframe" src="../../components/footer.html" scrolling="no"></iframe>
+    </div>
+    <script>
+        document.getElementById('header-iframe').onload = function() {
+    var iframe = document.getElementById('header-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+    document.getElementById('footer-iframe').onload = function() {
+    var iframe = document.getElementById('footer-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+    </script>
 </body>
 </html>

@@ -1,0 +1,403 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+#newsletter .container-fluid {
+    background: #F6F6F6;
+    padding: 59px 162px;
+}
+
+#newsletter h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0E1422;
+}
+
+#newsletter p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    text-align: left;
+    color: #5C5F6A;
+}
+
+#newsletter .subscribe-btn {
+    background-color: #0E1422;
+    border-radius: 4px;
+    color: white;
+}
+.col-5 form input {
+    width: 320px;
+    margin-left: 200px;
+}
+
+#section .container-fluid {
+    height: auto;
+    margin-top: 88px;
+}
+
+#section .logo-section img.logo {
+    width: 168px;
+    height: 44px;
+}
+
+#section .logo-section {
+    margin-bottom: 98px; 
+}
+
+#section .logo-section p {
+    width: 200px;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    color: #5C5F6A;
+    margin-top: 12px;
+    margin-bottom: 32px; 
+}
+
+#section .social-icons {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+#section .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+#section .support-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    margin-left: 98px; 
+
+}
+ #section .company-section, #section .shop-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    margin-left: 72px;
+}
+#section .payment-section{
+    margin-left: 102px;
+}
+
+#section .support-section p, #section .company-section p, #section .shop-section p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 175%;
+    color: #878A92;
+    margin: 0;
+    margin-bottom: 40px; 
+}
+
+#section .support-section p:nth-child(2), #section .company-section p:nth-child(2), #section .shop-section p:nth-child(2),
+#section .support-section p:nth-child(3), #section .company-section p:nth-child(3), #section .shop-section p:nth-child(3),
+#section .support-section p:nth-child(4), #section .company-section p:nth-child(4), #section .shop-section p:nth-child(4) {
+    font-size: 14px; 
+    color: rgba(92, 95, 106, 1);
+    margin-bottom: 16px;
+    
+}
+.payment-section p{
+    width: 155px;
+    height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 175%;
+    color: #878A92;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.payment-icon {
+    filter: grayscale(100%);
+}
+
+.payment-icon.mastercard {
+    width: 35px;
+    height: 22px;
+}
+
+.payment-icon.amex {
+    width: 46px;
+    height: 25px;
+}
+
+.payment-icon.visa {
+    width: 42px;
+    height: 32px;
+    padding: 9px 0;
+}
+
+.copyright {
+    padding: 27px 0; 
+}
+
+.copyright{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    color: #5C5F6A;
+    margin: 0;
+}
+
+.custom-col-spacing .col {
+    padding-left: 8px;  
+    padding-right: 8px; 
+}
+
+@media (max-width: 1200px) {
+    #newsletter .container-fluid {
+        padding: 40px 100px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 992px) {
+    #newsletter .container-fluid {
+        padding: 30px 50px;
+    }
+
+    .container-md {
+        padding: 0 15px;
+    }
+
+    .col-4, .col-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-4 p {
+        width: auto;
+    }
+
+    .col-5 {
+        margin-left: 0;
+    }
+
+    .col-5 form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .col-5 form input {
+            width: 320px;
+        }
+    
+        #section .container-fluid {
+            height: auto;
+        }
+    
+        #section .row, #section .col-2 {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .logo-section, .support-section, .company-section, .shop-section, .payment-section {
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .social-icons {
+            justify-content: center;
+        }
+    
+        .copyright .container {
+            flex-direction: column;
+            padding: 20px;
+            width: auto;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #newsletter .container-fluid {
+            padding: 20px 30px;
+            width: 807px;
+        }
+    
+        .container-md {
+            padding: 0 10px;
+        }
+    
+        .col-4, .col-5 {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .col-4 p {
+            width: auto;
+        }
+    
+        .col-5 form {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .col-5 form input {
+            width: 320px; 
+        }
+    
+        .logo-section, .support-section, .company-section, .shop-section, .payment-section {
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .social-icons {
+            justify-content: center;
+        }
+    
+        .copyright .container {
+            flex-direction: column;
+            padding: 15px;
+            width: auto;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        #newsletter .container-fluid {
+            padding: 20px;
+        }
+    
+        .container-md {
+            padding: 0 5px;
+        }
+    
+        .col-4, .col-5 {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .col-4 p {
+            width: auto;
+        }
+    
+        .col-5 form {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .col-5 form input {
+            width: 320px; 
+        }
+    
+        .logo-section, .support-section, .company-section, .shop-section, .payment-section {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .social-icons {
+            justify-content: center;
+        }
+        
+        .copyright{
+            flex-direction: column;
+            padding: 10px; 
+            width: auto;
+        }
+    }
+}
+@media (max-width: 576px) {
+    #section .logo-section, #section .support-section, #section .company-section, #section .shop-section, #section .payment-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px; 
+        margin-bottom: 72px; 
+        margin-left: -10px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 540px) {
+    #newsletter .container-fluid {
+        padding: 20px;
+        width: 540px;
+    }
+    #newsletter input{
+        width: 300px;
+    }
+    .container-md {
+        padding: 0 5px;
+    }
+
+    .col-4, .col-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-4 p {
+        width: auto;
+    }
+
+    .col-5 form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .col-5 form input {
+        width: 320px; 
+    }
+
+    .logo-section, .support-section, .company-section, .shop-section, .payment-section {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    .copyright{
+        flex-direction: column;
+        padding: 10px; 
+        width: auto;
+    }
+}
+@media (max-width: 1024px){
+    #section .payment-section{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 412px) {
+    #newsletter .container-fluid {
+        padding: 20px;
+        width: 412px;
+    }
+    #newsletter input{
+        width: 300px;
+    }
+}

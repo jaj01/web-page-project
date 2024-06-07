@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="iframe-container">
+        <iframe id="header-iframe" src="../../components/header.html" scrolling="no"></iframe>
+    </div>
     <div class="container">
         <h1>Login</h1>
         <div class="breadcrumb">
@@ -16,10 +19,10 @@
     </div>
     <div class="login-container">
         <button class="google-login">
-            <img src="../../assets/images/google.png" alt="Google logo">
+            <img src="../../assets/images/authentication/google.png" alt="Google logo">
         </button>
         <div class="separator">
-            <img src="../../assets/images/or.png" alt="OR">
+            <img src="../../assets/images/authentication/or.png" alt="OR">
         </div>
         <form class="login-form">
             <div class="input-group">
@@ -39,5 +42,19 @@
             Don't have an account? <a href="#">Sign up</a>
         </div>
     </div>
+    <div class="iframe-container">
+        <iframe id="footer-iframe" src="../../components/footer.html" scrolling="no"></iframe>
+    </div>
+    <script>
+        document.getElementById('header-iframe').onload = function() {
+    var iframe = document.getElementById('header-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+    document.getElementById('footer-iframe').onload = function() {
+    var iframe = document.getElementById('footer-iframe');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = iframeDoc.body.scrollHeight + 'px';};
+
+    </script>
 </body>
 </html>
